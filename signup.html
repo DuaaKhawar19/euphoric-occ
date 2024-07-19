@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+        }
+        .container {
+            margin-top: 80px; /* Space for the navbar */
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            width: 70%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .form-container .form-group input,
+        .form-container .form-group select {
+            background-color: rgba(255, 20, 147, 0.1);
+            border: 1px solid #ff1493;
+            color: #000;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px
+        }
+        .form-container .form-group input:focus,
+        .form-container .form-group select:focus {
+            background-color: rgba(255, 20, 147, 0.2);
+            border-color: #ff1493;
+        
+        }
+        .btn-custom {
+            background-color: #ff1493;
+            border: none;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            width: 60%;
+            height: 40px;
+            margin-left: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .btn-custom:hover {
+            background-color: #ff69b4;
+        }
+        @media (max-width: 768px) {
+            .image-container {      
+                          margin-top: 40px
+
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="form-container">
+                    <h2 class="text-center mb-4">Sign Up</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                        </div>
+                        <button type="submit" class="btn btn-custom btn-block">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 image-container">
+                <img src="/wp2.jpg" class="img-fluid" alt="Side Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
